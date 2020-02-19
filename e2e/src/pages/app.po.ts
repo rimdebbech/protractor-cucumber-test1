@@ -8,4 +8,13 @@ export class AppPage {
   getTitleText() {
     return element(by.css('app-root h1')).getText() as Promise<string>;
   }
+
+  getBtn(){
+    return element(by.cssContainingText('button','incremente'));
+  }
+
+  getValue(){
+    return element(by.css('app-root h2')).getText() as Promise<string>;
+  }
+
 }
